@@ -14,7 +14,8 @@ mean_value = df['numbers'].mean()
 print(f"Mean of numbers: {mean_value}")
 print(f"DataFrame shape: {df.shape}")
 
-# This will cause an error - trying to access a non-existent column
-result = df['cubes'].sum()  # ERROR: 'cubes' column doesn't exist
+# Fix the error by calculating the sum of cubes using the existing 'numbers' column
+result = (df['numbers'] ** 3).sum()  # Calculate sum of cubes
 print(f"Sum of cubes: {result}")
 
+# CodeSentinal: created for you by RuchirAdnaik.
