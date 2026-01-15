@@ -4,4 +4,7 @@ import torch
 import cv2
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
+
 print("Yedya!")
+
+# CodeSentinal: created for you by RuchirAdnaik.
