@@ -2,6 +2,9 @@ import pandas as pd
 import numpy as np
 import torch
 import cv2
+from langchain_openai import ChatOpenAI
+from langchain_core.messages import HumanMessage, SystemMessage
+
 
 # Create a DataFrame with some data
 data = {'numbers': [1, 2, 3, 4, 5], 'squares': [1, 4, 9, 16, 25]}
