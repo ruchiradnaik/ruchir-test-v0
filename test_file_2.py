@@ -12,8 +12,9 @@ product_tensor = tensor_a * tensor_b
 print(f"Sum: {sum_tensor}")
 print(f"Product: {product_tensor}")
 
-# This will cause an error - trying to add tensors of different shapes
-tensor_c = torch.tensor([1.0, 2.0])  # Different shape!
-result = tensor_a + tensor_c  # ERROR: Shape mismatch
+# Fixing the shape mismatch by creating tensor_c with the same shape as tensor_a
+tensor_c = torch.tensor([1.0, 2.0, 3.0, 4.0])  # Same shape as tensor_a
+result = tensor_a + tensor_c  # No ERROR: Shapes match
 print(f"Result: {result}")
 
+# CodeSentinal: created for you by RuchirAdnaik.
