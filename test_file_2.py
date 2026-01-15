@@ -1,5 +1,4 @@
 import torch
-import numpy as np
 
 # Create tensors
 tensor_a = torch.tensor([1.0, 2.0, 3.0, 4.0])
@@ -12,8 +11,9 @@ product_tensor = tensor_a * tensor_b
 print(f"Sum: {sum_tensor}")
 print(f"Product: {product_tensor}")
 
-# This will cause an error - trying to add tensors of different shapes
-tensor_c = torch.tensor([1.0, 2.0])  # Different shape!
-result = tensor_a + tensor_c  # ERROR: Shape mismatch
+# Fixing the shape mismatch by creating a tensor with the same shape as tensor_a
+tensor_c = torch.tensor([1.0, 2.0, 3.0, 4.0])  # Same shape!
+result = tensor_a + tensor_c  # Now this will work
 print(f"Result: {result}")
 
+# CodeSentinal: created for you by RuchirAdnaik.
